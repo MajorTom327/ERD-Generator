@@ -1,0 +1,23 @@
+{
+  "name": "db_erd",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "format": "biome check --fix"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.2.5",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@dbml/connector": "^3.13.9",
+    "@dbml/core": "^3.13.9",
+    "drizzle-dbml-generator": "^0.10.0",
+    "ts-pattern": "^5.8.0"
+  }
+}
